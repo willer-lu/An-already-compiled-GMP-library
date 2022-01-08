@@ -14,18 +14,16 @@ Click OK, then click Apply in the lower right corner, and click OK to exit
 Click on the right drop-down menu to click on Configuration Manager, click on the right active Solution platform change to 64-bit  
 6. Copy libgmp-10.dll from the. Libs directory in the GMP library file to the project folder  
 # Test code
-#include <iostream>
- 
-#include "gmp.h"
- 
-using namespace std;
- 
-int main()
-{
-	//计算2的1000次方
-	{
-		size_t a = 1;
-		for (int i = 0; i < 1000; i++)
+#include <iostream>  
+#include "gmp.h"  
+using namespace std;  
+   
+int main()  
+{  
+	//计算2的1000次方  
+	{  
+		size_t a = 1;  
+		for (int i = 0; i < 1000; i++)  
 		{
 			a *= 2;		
 		}
@@ -59,7 +57,7 @@ int main()
 		mpz_clear(b);
 		mpz_clear(c);
 		mpz_clear(d);
-	}
+	}  
 	   	  
-	return 0;
-}
+	return 0;  
+}  
